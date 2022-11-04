@@ -1,0 +1,28 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: domino-assignment
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username:
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      authentication-database: admin
+      database: domino-assignment
+      username:
+      password:
+
+
+
+
